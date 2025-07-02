@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --background: #f9f9f9;
+  --foreground: #181818;
+  --primary: #ff0000;
+  --secondary: #fff;
+  --sidebar-bg: #fff;
+  --sidebar-fg: #181818;
+  --card-bg: #fff;
+  --card-fg: #181818;
+  --border: #e0e0e0;
+  --input-bg: #f1f1f1;
+  --input-fg: #181818;
+}
+
+[data-theme="dark"] {
+  --background: #181818;
+  --foreground: #f9f9f9;
+  --primary: #ff0000;
+  --secondary: #232323;
+  --sidebar-bg: #232323;
+  --sidebar-fg: #f9f9f9;
+  --card-bg: #232323;
+  --card-fg: #f9f9f9;
+  --border: #333;
+  --input-bg: #232323;
+  --input-fg: #f9f9f9;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  transition: background 0.3s, color 0.3s;
+}
+
+* {
+  transition: background 0.3s, color 0.3s;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body, #root, .App, .home-container, .home-content, .sidebar, .trending-container, .gaming-container, .saved-videos-container, .notfound-container {
+  background: var(--background) !important;
+  color: var(--foreground) !important;
+}

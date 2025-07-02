@@ -1,0 +1,131 @@
+.class-li-link {
+  text-decoration: none;
+}
+.list-videos {
+  list-style-type: none;
+  margin-left: 5vh;
+  margin-bottom: 1vh;
+  color: dimgray;
+}
+.img-videos {
+  height: 30vh;
+  width: 25vw;
+}
+.logo-img {
+  height: 9vh;
+  width: 6vw;
+}
+.descr {
+  display: flex;
+  width: 25vw;
+}
+.li-view {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 10vh;
+  align-items: center;
+}
+.li1 {
+  list-style-type: none;
+  width: 30px;
+  margin-right: 2vh;
+}
+
+.video-card {
+  background: var(--card-bg);
+  color: var(--card-fg);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s, background 0.2s, color 0.2s;
+  text-decoration: none;
+}
+.video-thumbnail-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: #000;
+}
+.video-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.play-overlay {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0,0,0,0.7);
+  border-radius: 50%;
+  padding: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+}
+.channel-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+}
+.video-details {
+  flex: 1;
+}
+.video-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--card-fg);
+  margin-bottom: 0.2rem;
+}
+.channel-name {
+  font-size: 0.95rem;
+  color: var(--foreground);
+  margin-bottom: 0.2rem;
+}
+.video-stats {
+  font-size: 0.9rem;
+  color: #888;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .video-content {
+    padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+    gap: 0.7rem;
+  }
+  .channel-logo {
+    width: 36px;
+    height: 36px;
+  }
+  .video-title {
+    font-size: 0.98rem;
+  }
+  .channel-name {
+    font-size: 0.85rem;
+  }
+  .video-stats {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 600px) {
+  .video-content {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    gap: 0.5rem;
+  }
+  .channel-logo {
+    width: 28px;
+    height: 28px;
+  }
+}
